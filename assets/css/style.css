@@ -553,6 +553,11 @@ ul li {
   list-style-type: lower-greek;
 }
 
+.list_7 li {
+  list-style-type: square;
+  text-align: left;
+}
+
 .story_images {
   padding: 0rem 0rem 0rem 2rem;
   text-align: right;
@@ -569,6 +574,14 @@ ul li {
 .story_images div img {
   width: 100%; /* Ảnh sẽ chiếm toàn bộ chiều rộng của khung */
   border-radius: 5px; /* Độ cong cho góc của ảnh (nếu muốn) */
+}
+
+.platform {
+  text-align: right;
+}
+
+.platform a svg {
+  margin: 10px 10px 0px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
