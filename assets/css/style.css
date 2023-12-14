@@ -9,6 +9,7 @@ Description: This Template is created for Youtubers
 /* ===================================== Import Variables ================================== */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Arimo:300,400,400italic,700,700italic);
+
 .bg-primary {
   background-color: #8119f5 !important;
 }
@@ -67,7 +68,8 @@ textarea {
   cursor: pointer;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: "Poppins";
 }
@@ -107,7 +109,12 @@ p {
   padding: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #545454;
 }
 
@@ -125,17 +132,20 @@ body {
   margin: 0px;
   margin-bottom: 20px;
 }
+
 @media screen and (max-width: 767px) {
   .section-title {
     padding: 5px;
   }
 }
+
 .section-title h2 {
   width: 100%;
   text-align: center;
   font-weight: 600;
   margin-bottom: 0px;
 }
+
 .section-title p {
   max-width: 850px;
   text-align: center;
@@ -144,6 +154,7 @@ body {
   font-size: 0.9rem;
   margin-top: 6px;
 }
+
 .section-title span {
   float: right;
   font-style: italic;
@@ -159,6 +170,7 @@ body {
   display: block;
   padding-right: 0px;
 }
+
 .inner-title h2 {
   width: 100%;
   text-align: center;
@@ -170,10 +182,12 @@ body {
   margin-bottom: 0px;
   width: 300px;
 }
+
 .inner-title p {
   width: 100%;
   text-align: center;
 }
+
 .inner-title .btn {
   float: right;
   margin-top: -38px;
@@ -187,38 +201,45 @@ body {
   text-align: center;
   background-color: #eaeaea;
 }
+
 .page-nav ul {
   float: none;
   margin: auto;
 }
+
 @media screen and (max-width: 992px) {
   .page-nav {
     background-size: auto;
   }
 }
+
 @media screen and (max-width: 767px) {
   .page-nav {
     padding-top: 200px;
     padding-bottom: 40px;
   }
 }
+
 @media screen and (max-width: 356px) {
   .page-nav {
     padding-top: 200px;
     padding-bottom: 40px;
   }
 }
+
 .page-nav h2 {
   font-size: 28px;
   width: 100%;
   font-weight: 700;
   color: #444;
 }
+
 @media screen and (max-width: 600px) {
   .page-nav h2 {
     font-size: 26px;
   }
 }
+
 .page-nav ul li {
   float: left;
   margin-right: 10px;
@@ -228,11 +249,13 @@ body {
   font-weight: 600;
   color: #444;
 }
+
 .page-nav ul li i {
   width: 30px;
   text-align: center;
   color: #444;
 }
+
 .page-nav ul li a {
   color: #444;
   font-size: 0.93rem;
@@ -243,14 +266,17 @@ body {
   background-color: #51be78;
   border-color: #51be78;
 }
+
 .btn-success:hover {
   background-color: #51be78 !important;
   border-color: #51be78 !important;
 }
+
 .btn-success:active {
   background-color: #51be78 !important;
   border-color: #51be78 !important;
 }
+
 .btn-success:focus {
   background-color: #51be78 !important;
   border-color: #51be78 !important;
@@ -261,14 +287,17 @@ body {
   background-color: #8119f5;
   border-color: #8119f5;
 }
+
 .btn-primary:hover {
   background-color: #8119f5 !important;
   border-color: #8119f5 !important;
 }
+
 .btn-primary:active {
   background-color: #8119f5 !important;
   border-color: #8119f5 !important;
 }
+
 .btn-primary:focus {
   background-color: #8119f5 !important;
   border-color: #8119f5 !important;
@@ -279,14 +308,17 @@ body {
   border-color: #8119f5;
   color: #8119f5;
 }
+
 .btn-outline-primary:hover {
   background-color: #8119f5 !important;
   border-color: #8119f5 !important;
 }
+
 .btn-outline-primary:active {
   background-color: #8119f5 !important;
   border-color: #8119f5 !important;
 }
+
 .btn-outline-primary:focus {
   background-color: #8119f5 !important;
   border-color: #8119f5 !important;
@@ -316,6 +348,7 @@ body {
   background-color: #F8F8F8;
   margin-bottom: 20px;
 }
+
 .form-control:focus {
   background-color: #FFF;
   border-color: #CCC;
@@ -324,6 +357,7 @@ body {
 .container {
   max-width: 1170px;
 }
+
 @media screen and (max-width: 575px) {
   .container {
     padding: 10px 15px;
@@ -347,6 +381,7 @@ body {
 .big-padding {
   padding: 50px;
 }
+
 @media screen and (max-width: 940px) {
   .big-padding {
     padding: 30px 10px;
@@ -397,6 +432,7 @@ body {
   float: none;
   margin: auto;
 }
+
 .rtable tr td {
   padding: 5px;
 }
@@ -422,6 +458,7 @@ body {
   font-size: 0.875rem;
   border-radius: 0.2rem;
 }
+
 .btn-xs i {
   font-size: 16px;
 }
@@ -471,6 +508,7 @@ body {
   height: 100vh;
   box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
 }
+
 @media screen and (max-width: 991px) {
   .head {
     position: relative;
@@ -478,31 +516,38 @@ body {
     height: auto;
   }
 }
+
 .head .logo {
   padding: 15px;
 }
+
 .head .logo img {
   max-width: 250px;
 }
+
 @media screen and (max-width: 991px) {
   .head .logo {
     padding: 20px 15px;
   }
 }
+
 .head .navcol {
   padding-top: 15px;
 }
+
 .head .navcol ul li {
   padding: 15px 30px;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.9rem;
 }
+
 .head .navbar-toggler {
   float: right;
   margin-top: 10px;
   padding-right: 0px;
 }
+
 .head .navbar-toggler i {
   font-size: 2rem;
 }
@@ -510,6 +555,7 @@ body {
 .main-content {
   margin-left: 260px;
 }
+
 @media screen and (max-width: 991px) {
   .main-content {
     margin-left: 0px;
@@ -572,8 +618,10 @@ ul li {
 }
 
 .story_images div img {
-  width: 100%; /* Ảnh sẽ chiếm toàn bộ chiều rộng của khung */
-  border-radius: 5px; /* Độ cong cho góc của ảnh (nếu muốn) */
+  width: 100%;
+  /* Ảnh sẽ chiếm toàn bộ chiều rộng của khung */
+  border-radius: 5px;
+  /* Độ cong cho góc của ảnh (nếu muốn) */
 }
 
 .platform {
@@ -589,3 +637,41 @@ ul li {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* css popup image */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#popup-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}
