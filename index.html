@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/leetcode.css" />
 </head>
 <header class="head">
     <div id="navbarNav" class="navcol d-none d-lg-block">
@@ -37,23 +38,64 @@
 <div class="main-content">
 
     <!--########################## Profile Starts Here ############################# -->
-    <div class="profile-head">
+    <div class="profile-head px-3">
         <div class="row vh-100">
-            <div class="col-xl-6 text-center mx-auto align-self-center ">
+            <div class="col-xl-12 text-center mx-auto align-self-center">
+
                 <div class="imgcover mb-4">
                     <img src="assets/images/avatar.jpg" class="rounded-pill bg-white p-2 shadow" alt="">
                 </div>
                 <b class="fs-6">Hello, I am Vũ Công Thành</b>
                 <h1 class="fw-bold mb-4 fs-1">Backend Develper</h1>
                 <hr>
-                <p>I am a person who is passionate about technology and learning new knowledge. I am willing to take on
-                    different programming positions to complete the job and bring the best results to the team.</p>
-                <hr>
-                <p>I have the ability to work well in a team and withstand high work pressure. In addition, I can adapt
-                    quickly to new working environments and make quick progress at work.</p>
-                <hr>
-                <p>I always try to develop myself with specific future goals and become a professional programmer and
-                    more.</p>
+
+                <div class="row d-flex justify-content-center text-center px-2">
+                    <div class="col-6 mt-4">
+                        <div class="col-xl-8 text-center mx-auto align-self-center">
+                            <p>I am a person who is passionate about technology and learning new knowledge. I am willing to take on
+                                different programming positions to complete the job and bring the best results to the team.</p>
+                            <hr>
+                            <p>I have the ability to work well in a team and withstand high work pressure. In addition, I can adapt
+                                quickly to new working environments and make quick progress at work.</p>
+                            <hr>
+                            <p>I always try to develop myself with specific future goals and become a professional programmer and
+                                more.</p>
+                        </div>
+                    </div>
+
+                    <!--########################## leetcode data ############################# -->
+                    <div class="col-6 mt-4">
+                        <div class="col-xl-10 text-center mx-auto align-self-center container_leetcode">
+                            <h3>LeetCode Stats</h3>
+                            <p>Username: <strong id="username">Loading...</strong></p>
+                            <hr>
+                            <div class="row">
+                                <div class="col-6">Ranking: <strong id="ranking">0</strong></div>
+                                <div class="col-6">Acceptance Rate: <strong id="acceptanceRate">0%</strong></div>
+                            </div>
+
+                            <div class="stats">
+                                <div class="stat-box easy">
+                                    <p>Easy</p>
+                                    <span id="easySolved">0</span>/<span id="totalEasy">0</span>
+                                </div>
+                                <div class="stat-box medium">
+                                    <p>Medium</p>
+                                    <span id="mediumSolved">0</span>/<span id="totalMedium">0</span>
+                                </div>
+                                <div class="stat-box hard">
+                                    <p>Hard</p>
+                                    <span id="hardSolved">0</span>/<span id="totalHard">0</span>
+                                </div>
+                            </div>
+                            <div class="row additional-stats">
+                                <div class="col-6">Total Solved: <strong id="totalSolved">0</strong> / <span id="totalQuestions">0</span></div>
+                                <div class="col-6">contributionPoints: <strong id="contributionPoints">0</strong></div>
+                            </div>
+                        </div>                
+                        <!--########################## end leetcode data ############################# -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -754,6 +796,7 @@
     <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
     <script src="assets/plugins/testimonial/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/leetcode.js"></script>
 
     <!-- javascript custom -->
     <script>
@@ -775,6 +818,37 @@
                 popup.style.display = "none";
             }
         });
+    </script>
+
+    <script>
+        async function fetchLeetCodeStats(username) {
+            const response = await fetch(`https://leetcode-stats-api.herokuapp.com/vucongthanh92`);
+            const data = await response.json();
+            return data;
+        }
+    
+        async function updateLeetCodeStats() {
+            const username = "vucongthanh92";  // Thay bằng username của bạn
+            const data = await fetchLeetCodeStats(username);
+    
+            if (!data) return;
+    
+            document.getElementById("username").textContent = "vucongthanh92";
+            document.getElementById("totalSolved").textContent = data.totalSolved;
+            document.getElementById("totalQuestions").textContent = data.totalQuestions;
+            document.getElementById("easySolved").textContent = data.easySolved;
+            document.getElementById("totalEasy").textContent = data.totalEasy;
+            document.getElementById("mediumSolved").textContent = data.mediumSolved;
+            document.getElementById("totalMedium").textContent = data.totalMedium;
+            document.getElementById("hardSolved").textContent = data.hardSolved;
+            document.getElementById("totalHard").textContent = data.totalHard;
+            document.getElementById("ranking").textContent = data.ranking;
+            document.getElementById("contributionPoints").textContent = data.contributionPoints;
+            document.getElementById("reputation").textContent = data.reputation;
+            document.getElementById("acceptanceRate").textContent = data.acceptanceRate + "%";
+        }
+        updateLeetCodeStats();
+
     </script>
 
 </html>

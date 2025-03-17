@@ -1,0 +1,49 @@
+/* Card hiển thị dữ liệu */
+.container_leetcode {
+    background: rgb(253, 251, 251);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+
+/* Bảng thống kê */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Card nhỏ */
+.stat-box {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Màu sắc cho từng cấp độ */
+.easy {
+    background-color: #e3fcef;
+    color: #28a745;
+}
+
+.medium {
+    background-color: #fff3cd;
+    color: #ff9800;
+}
+
+.hard {
+    background-color: #fdecea;
+    color: #dc3545;
+}
+
+/* Thêm phần dữ liệu mở rộng */
+.additional-stats {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+}
